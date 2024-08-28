@@ -1,0 +1,19 @@
+site_name: fake project
+site_url: https://github.com/flynshue/fakeproject
+theme:
+  name: material
+  # features:
+  #   - navigation.top
+plugins:
+  - search:
+  - blog:
+  - rss:
+      match_path: blog/posts/.*
+      date_from_meta:
+        as_creation_date: date
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
