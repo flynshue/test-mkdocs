@@ -1,8 +1,6 @@
 # test-mkdocs
 PoC with squidfunk/mkdocs-material:9
 
-test
-
 ## Building Docker image
 The default image specified in the [official docs](https://squidfunk.github.io/mkdocs-material/creating-your-site/) will run everything as root which is a terrible idea
 
