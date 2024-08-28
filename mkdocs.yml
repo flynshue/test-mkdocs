@@ -3,6 +3,8 @@ site_url: https://flynshue.github.io/test-mkdocs
 theme:
   name: material
   custom_dir: overrides
+  icon:
+    logo: fontawesome/solid/otter
   # features:
   #   - navigation.top
 plugins:
