@@ -7,6 +7,10 @@
       <div class="md-content__inner">
         <header class="md-typeset">
           {{ page.content }}
+          <a href="{{base_url}}/feed_rss_created.xml">Subscribe for updates <span class="twemoji">
+            {% include ".icons/fontawesome/solid/square-rss.svg" %}
+          </span>
+          </a>
         </header>
         {% for post in posts %}
           {% include "partials/post.html" %}

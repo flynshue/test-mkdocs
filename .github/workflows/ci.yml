@@ -25,5 +25,6 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material && pip install mkdocs-rss-plugin
+      # - run: pip install mkdocs-material && pip install mkdocs-rss-plugin
+      - run: pip install -r requirements.txt
       - run: mkdocs gh-deploy --force

@@ -64,3 +64,18 @@ INFO    -  [18:23:46] Browser connected: http://0.0.0.0:8000/flynshue/fakeprojec
 ```
 
 You can then open your site in web browser at port 8000
+
+## Publishing to GHA
+First you'll need to go to your github repo's settings > pages
+
+Set the github pages to source to **Build from a branch**
+
+Set the branch to **gh-pages** and folder to **/root**
+
+You'll need to add GHA workflow to that will run `mkdocs` to build your site
+
+You can use the [GHA workflow](https://squidfunk.github.io/mkdocs-material/publishing-your-site/#with-github-actions) from mkdocs-material as a starting point
+
+Note you'll need to make sure that GHA workflow includes `pip install mkdocs-<pluginName>` for any additional plugins you need.
+
+After you push to `main` branch that will kick off the GHA workflow to deploy your github pages

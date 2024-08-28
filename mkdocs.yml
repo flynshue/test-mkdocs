@@ -2,6 +2,7 @@ site_name: test-mkdocs
 site_url: https://flynshue.github.io/test-mkdocs
 theme:
   name: material
+  custom_dir: overrides
   # features:
   #   - navigation.top
 plugins:
@@ -14,6 +15,7 @@ plugins:
 markdown_extensions:
   - admonition
   - attr_list
+  # - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
