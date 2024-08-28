@@ -6,9 +6,12 @@ The default image specified in the [official docs](https://squidfunk.github.io/m
 
 If you were to copy/paste command from the docs and run it, it would create `./docs/index.md` with the root user
 
-> [!NOTE]This docker image is meant to be run locally for development. i.e Don't run this in k8s
+<!-- > [!NOTE]This docker image is meant to be run locally for development. i.e Don't run this in k8s -->
+!!! note
+    This docker image is meant to be run locally for development. i.e Don't run this in k8s
 
-> [!WARNING] Don't run this as root, it's a bad idea
+!!! warning
+    Don't run this as root, it's a bad idea
 
 ```bash
 flynshue@flynshue-Latitude-7430:/tmp/faker-docs$ docker run --rm -it -v ${PWD}:/docs squidfunk/mkdocs-material:9 new .
