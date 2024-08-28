@@ -1,5 +1,5 @@
-site_name: fake project
-site_url: https://github.com/flynshue/fakeproject
+site_name: test-mkdocs
+site_url: https://flynshue.github.io/test-mkdocs
 theme:
   name: material
   # features:
